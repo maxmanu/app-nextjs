@@ -1,0 +1,53 @@
+{
+    "usuarios":[
+        {
+            "idUsuario": 66,
+            "departamentoProfesional": "15",
+            "provinciaProfesional": "160",
+            "distritosProfesional": "1610,1611,1612",
+            "tiempoExperiencia": 10,
+            "disponibilidad": "1,3,5",
+            "descripcion": "Descripcion de Prueba 123",
+            "listaFotos": null,
+            "jobProfessionalDTO": [
+                {
+                    "idOficio": "5",
+                    "idServicio": "51,53,55"
+                },
+                {
+                    "idOficio": "10",
+                    "idServicio": "104,102"
+                }
+            ],
+            "educationDTO": [
+                {
+                    "nombreInstitucion": "Instituto de Pintura del Perú",
+                    "carrera": "Pintor Profesional",
+                    "periodo": "2018-2019"
+                },
+                {
+                    "nombreInstitucion": "Instituto de Pintura del Perú",
+                    "carrera": "Pintura de Interiores",
+                    "periodo": "2020-2021"
+                }
+            ],
+            "experienceDTO": [
+                {
+                    "nombreEmpresa": "Municipalidad de Lima",
+                    "cargo": "Pintor Contratado",
+                    "periodo": "2019-2020"
+                },
+                {
+                    "nombreEmpresa": "Municipalidad de Lima",
+                    "cargo": "Pintor Profesional",
+                    "periodo": "2020-2023"
+                },
+                {
+                    "nombreEmpresa": "Ninguna",
+                    "cargo": "Gasfitero Independiente",
+                    "periodo": "2015-2023"
+                }
+            ]
+        }
+    ]
+}
