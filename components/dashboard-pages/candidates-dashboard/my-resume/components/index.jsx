@@ -33,7 +33,7 @@ const Index = () => {
     const [experiencia, setExperiencia] = useState('');
     const [descripcion, setDescripcion] = useState('');
 
-    useEffect( ()=>{
+    useEffect( () => {
         const getuser= async ()=>{
             const profesionalId = localStorage.getItem("id");
             const estado = { "idUsuario" : profesionalId };
@@ -44,6 +44,7 @@ const Index = () => {
             });
             const getres= await req.json();
             const dataUser = getres.listaObjeto[0];
+            console.log('======== INDEX dataUser =====', dataUser)
             setUserData(dataUser);
 
             const listadepartamentos = await getdepartamento();
@@ -290,7 +291,7 @@ const Index = () => {
         <form onSubmit={handleSubmit} className="default-form">
             <div className="row">
                 <div className="col-lg-12">
-                    <RepeaterFieldOs/>
+                    <RepeaterFieldOs userDataFetched={userdata}/>
                 </div>
 
                 <div className="form-group col-lg-9 col-md-12">
@@ -406,3 +407,5 @@ const Index = () => {
 };
 
 export default Index;
+
+
